@@ -151,7 +151,7 @@ def main():
         response = model.generate.call([q])
         if counter >= 2:
             responses.append(response)
-    counter += 1
+        counter += 1
 
     df = pd.DataFrame(responses)
     df.to_csv('bench-vllm.csv', index=False)
