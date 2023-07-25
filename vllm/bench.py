@@ -37,10 +37,9 @@ def download_model_to_folder():
 def generate(question, llm, note=None):
     response = {'question': question, 'note': note}
     sampling_params = SamplingParams(
-        temperature=0.75,
+        temperature=1.0,
         top_p=1,
-        max_tokens=800,
-        presence_penalty=1.15
+        max_tokens=200,
     )
     
     start = time.perf_counter()
