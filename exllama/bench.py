@@ -2,9 +2,7 @@ import openai
 import os, sys, time, argparse
 if not os.getenv('OPENAI_API_KEY'):
     raise ValueError("Must set environment variable OPENAI_API_KEY")
-sys.path.append('../common/')
 import pandas as pd
-from questions import questions
 from tqdm import tqdm
 
 url = 'http://0.0.0.0:5001/v1'
