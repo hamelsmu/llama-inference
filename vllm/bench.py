@@ -1,6 +1,6 @@
 import sys, time
 import pandas as pd
-import tqdm
+from tqdm import tqdm
 from vllm import SamplingParams, LLM
 
 #from https://modal.com/docs/guide/ex/vllm_inference
@@ -20,7 +20,7 @@ questions = [
     "Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.",
 ]
 
-MODEL_DIR = "/model"
+MODEL_DIR = "/home/ubuntu/hamel-drive/vllm-models"
 
 def download_model_to_folder():
     from huggingface_hub import snapshot_download
