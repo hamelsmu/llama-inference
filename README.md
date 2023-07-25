@@ -6,9 +6,9 @@ For my experiments, I will be using [meta-llama/Llama-2-7b-hf](https://huggingfa
 
 I'm exploring answers to these questions:
 
-- ~[ ] How does latency differ on a 3090 vs. A600 vs. A10 vs. A100?~ I decided to run all experiments on a A600
+- [x] ~How does latency differ on a 3090 vs. A600 vs. A10 vs. A100?~ I decided to run all experiments on a A600
 - [ ] What is the latency of inference out of the box with transformers?  
-- [ ] What is the latency when using various tools that speed up inference?  There are tools like [TGI](https://github.com/huggingface/text-generation-inference), [vLLM](https://github.com/vllm-project), [CTranslate](https://github.com/OpenNMT/CTranslate2) but also model-level optimizations like [4/8 bit quantization](https://twitter.com/joao_gante/status/1681593614676426753?s=20) (which some of the aforementioned tools can apply for you.)
+- [x] What is the latency when using various tools that speed up inference?  There are tools like [TGI](https://github.com/huggingface/text-generation-inference), [vLLM](https://github.com/vllm-project), [CTranslate](https://github.com/OpenNMT/CTranslate2) but also model-level optimizations like [4/8 bit quantization](https://twitter.com/joao_gante/status/1681593614676426753?s=20) (which some of the aforementioned tools can apply for you.)
 
 ## Caveats
 
