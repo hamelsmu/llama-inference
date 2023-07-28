@@ -5,7 +5,7 @@ import time
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf")
 model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-hf")
 
-model = model.to_bettertransformer()
+# model = model.to_bettertransformer()
 model.to("cuda")
 
 prompt = "Hello, my llama's name is Zach"
