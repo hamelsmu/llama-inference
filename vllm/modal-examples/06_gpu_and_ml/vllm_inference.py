@@ -94,9 +94,6 @@ class Model:
 
         # Load the model. Tip: MPT models may require `trust_remote_code=true`.
         self.llm = LLM(MODEL_DIR)
-        self.template = """SYSTEM: You are a helpful assistant.
-USER: {}
-ASSISTANT: """
 
     @method()
     def generate(self, user_questions):

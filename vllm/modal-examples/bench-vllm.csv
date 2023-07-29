@@ -1,5 +1,5 @@
 question,note,tok_count,time,answer
-['Write a Rust function that performs binary exponentiation.'],vLLM/Modal A100,200,4.893042896999759,"
+['Write a Rust function that performs binary exponentiation.'],vLLM/Modal A100,200,4.8202995150059,"
 
 Given two integers `a` and `b`, return the result of `a` raised to the power of `b`, that is, `a ^ b`.
 
@@ -18,7 +18,7 @@ Please provide a detailed explanation of your solution.
 Here's an example of what you can do with this function:
 ```
 let result = exponentiate(2, 3);  // result"
-['What are the differences between Javascript and Python?'],vLLM/Modal A100,200,4.906907689000036,"
+['What are the differences between Javascript and Python?'],vLLM/Modal A100,200,4.806303917997866,"
 
 Javascript and Python are two of the most popular programming languages in use today. While both languages share some similarities, such as the ability to manipulate data and perform operations on it, they also have some key differences that set them apart. Here are some of the main differences between the two languages:
 
@@ -27,7 +27,7 @@ Javascript and Python are two of the most popular programming languages in use t
 2. Dynamic Typing: Javascript is a dynamically-typed language, which means that the data type of a variable is determined at runtime, rather than at compile time. Python is also dynamically-typed.
 
 3. Object-Oriented Programming: Both languages support object-oriented programming (OOP), but they differ in their approach to OOP. Javascript uses"
-"['Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.']",vLLM/Modal A100,200,4.9178352290000475,"
+"['Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.']",vLLM/Modal A100,200,4.828301367000677,"
 
 This is a fun assignment!
 
@@ -38,12 +38,12 @@ The eyebrows of Bridget Conroy scrunched up in a puzzle as she read the email fr
 Moira had always had an odd fascination with the Australian outback, and more recently, with the robots that had begun to inhabit the vast, arid landscape. Bridget had never understood why her cousin would choose to visit such a remote and inhospitable place, especially now that the robots had taken over most of the world's vital functions and there was no longer any need to travel.
 
 But despite her initial skepticism, Bridget couldn't deny the allure of the outback. She had always been drawn to the abstract, the surreal,"
-['Who does Harry turn into a balloon?'],vLLM/Modal A100,50,1.2033380600000783,"
+['Who does Harry turn into a balloon?'],vLLM/Modal A100,50,1.1855930570018245,"
 
 In the story ""Harry Potter and the Philosopher's Stone"", Harry Potter is not turned into a balloon. There is no character in the story who is turned into a balloon.
 
 "
-"[""Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.""]",vLLM/Modal A100,200,4.926612535999993,"
+"[""Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.""]",vLLM/Modal A100,200,4.835275210003601,"
 
 Title: The Time-Traveling Historian's Quest
 
@@ -52,7 +52,7 @@ Professor Emma Taylor had always been fascinated by the past. As a historian, sh
 One day, while working in her office at the university, Emma stumbled upon an old, mysterious-looking watch in a dusty forgotten drawer. As soon as she put it on her wrist, she felt a strange sensation wash over her. Suddenly, she was transported to ancient Egypt, surrounded by pyramids and pharaohs.
 
 Over the next few weeks, Emma found herself time-traveling to different eras of"
-['What is the product of 9 and 8?'],vLLM/Modal A100,34,0.8230788239998219,"
+['What is the product of 9 and 8?'],vLLM/Modal A100,34,0.8033932779944735,"
 
 9 and 8
 ---------
@@ -60,7 +60,7 @@ Over the next few weeks, Emma found herself time-traveling to different eras of"
 When you multiply 9 and 8, you get:
 
 9 x 8 = 72"
-"['If a train travels 120 kilometers in 2 hours, what is its average speed?']",vLLM/Modal A100,70,1.6917867140000453,"
+"['If a train travels 120 kilometers in 2 hours, what is its average speed?']",vLLM/Modal A100,70,1.6674152170016896,"
 To find the average speed, we need to divide the distance traveled by the time taken:
 
 Average speed = Distance / Time
@@ -68,7 +68,7 @@ Average speed = Distance / Time
 = 60 km/h
 
 So, the train's average speed is 60 kilometers per hour."
-"['Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.']",vLLM/Modal A100,191,4.720253721000063,"
+"['Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.']",vLLM/Modal A100,191,4.615302378006163,"
 
 I know this is an arithmetic sequence and I know the common difference is a_(n-1) + a_(n-2), but I'm not sure how to apply that to this problem. Could someone please help me? Thank you!
 

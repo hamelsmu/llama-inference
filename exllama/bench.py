@@ -22,9 +22,9 @@ def generate_text_and_save_results(filename):
     for q in tqdm(questions):
         start = time.perf_counter()
         result =openai.Completion.create(model='TheBloke_Llama-2-7B-GPTQ',
-                                        prompt="Say this is a test",
-                                        max_tokens=200,
-                                        temperature=0)
+                                         prompt="Say this is a test",
+                                         max_tokens=200,
+                                         temperature=0)
         request_time = time.perf_counter() - start
         if counter >= 2: # allow for a warmup
             responses.append({'tok_count': result.usage.completion_tokens, 
