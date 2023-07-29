@@ -21,7 +21,7 @@ def predict(prompt:str):
             'time': request_time,
             'question': prompt,
             'answer': output,
-            'note': 'CTranslate2'}
+            'note': 'CTranslate2 int8 quantization'}
 
 if __name__ == '__main__':
     counter = 1
@@ -32,4 +32,4 @@ if __name__ == '__main__':
         counter += 1
 
     df = pd.DataFrame(responses)
-    df.to_csv('bench-ctranslate.csv', index=False)
+    df.to_csv('bench-ctranslate-int8.csv', index=False)
