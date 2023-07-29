@@ -1,0 +1,62 @@
+tok_count,time,question,answer,note
+200,4.508843942981912,Write a Rust function that performs binary exponentiation.,"
+
+## Examples
+
+```rust
+exponentiate(2, 3) // 8
+exponentiate(2, 4) // 16
+exponentiate(2, 5) // 32
+exponentiate(2, 6) // 64
+exponentiate(2, 7) // 128
+exponentiate(2, 8) // 256
+exponentiate(2, 9) // 512
+exponentiate(2, 10) // 1024
+exponentiate(2, 11) // 2048
+exponentiate(2, 12) // 4096
+exponentiate(2, 13) // 8192
+exponentiate(2, 14) // 16384
+exponentiate(",CTranslate2
+200,4.448402571986662,What are the differences between Javascript and Python?,"
+What are the differences between Javascript and Python? What are the differences between Javascript and Python?
+Javascript is a client-side scripting language that is used to create interactive web pages. It is a dynamic language that allows you to create interactive web pages that can respond to user input. Python is a server-side scripting language that is used to create web applications. It is a static language that allows you to create web applications that are not interactive.
+Javascript is a client-side scripting language that is used to create interactive web pages. It is a dynamic language that allows you to create interactive web pages that can respond to user input. Python is a server-side scripting language that is used to create web applications. It is a static language that allows you to create web applications that are not interactive.
+Javascript is a client-side scripting language that is used to create interactive web pages. It is a dynamic language that allows you to create interactive web pages",CTranslate2
+200,4.459331210993696,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.","
+Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert. The story should be about 1000 words long.
+The story should be about 1000 words long.
+The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1",CTranslate2
+200,4.448937126988312,Who does Harry turn into a balloon?,"
+Who does Harry turn into a balloon? Harry Potter and the Chamber of Secrets Harry Potter and the Chamber of Secrets is the second novel in the Harry Potter series and the second novel written by J. K. Rowling. The plot follows Harry Potter’s second year at Hogwarts as he is beset by a…
+What is the best way to get rid of a cold sore?
+What is the best way to get rid of a cold sore? Cold sores are caused by the herpes simplex virus (HSV). There is no cure for HSV, but there are ways to treat cold sores and prevent them from coming back. Cold sores usually go away on their own within 10 to 14 days.…
+What is the best way to get rid of a cold sore fast?
+What is the best way to get rid of a cold sore fast? Cold sores",CTranslate2
+200,4.459619034983916,Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.,"
+Write a tale about a time-traveling historian who's determined to witness the most significant events in human history. The story should be told from the perspective of the historian, and should include at least one significant event from each of the following eras:
+The story should be told from the perspective of the historian, and should include at least one significant event from each of the following eras:
+The story should be told from the perspective of the historian, and should include at least one significant event from each of the following eras: The Stone Age, The Bronze Age, The Iron Age, The Classical Age, The Middle Ages, The Renaissance, The Enlightenment, The Industrial Revolution, The Modern Age, The Information Age, The Future.
+The story should be told from the perspective of the historian, and should include at least one significant event from each of the following eras: The Stone Age, The Bronze Age, The Iron",CTranslate2
+200,4.448622380994493,What is the product of 9 and 8?,"
+What is the product of 9 and 8? 72
+What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is",CTranslate2
+200,4.453108499001246,"If a train travels 120 kilometers in 2 hours, what is its average speed?","
+A. 60 km/h
+B. 60 km/h
+C. 60 km/h
+D. 60 km/h
+E. 60 km/h
+The average speed of a train is the distance traveled by the train divided by the time taken to travel that distance.
+The average speed of a train is the distance traveled by the train divided by the time taken to travel that distance. The average speed of a train is the distance traveled by the train divided by the time taken to travel that distance. The average speed of a train is the distance traveled by the train divided by the time taken to travel that distance. The average speed of a train is the distance traveled by the train divided by the time taken to travel that distance. The average speed of a train is the distance traveled by the train divided by the time taken to travel that distance. The average speed",CTranslate2
+200,4.471184847003315,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.","
+The sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2.
+a_6 = a_(6-1) + a_(6-2)
+= a_(5) + a_(4)
+= 3 + 5
+= 8.
+The sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2.
+a_6 = a_(6-1) + a_(6-2)
+= a_(5) + a_(4)
+= 3 + 5
+= 8.
+The sequence a_n is defined by a_1 = 3, a_2 = 5, and",CTranslate2
