@@ -1,0 +1,1 @@
+[CTranslate](https://opennmt.net/CTranslate2/guides/transformers.html#llama-2)
