@@ -1,5 +1,5 @@
 tok_count,time,question,answer,note
-200,9.069168013998933,Write a Rust function that performs binary exponentiation.,"Write a Rust function that performs binary exponentiation. nobody has submitted a solution yet.
+200,9.22480926100252,Write a Rust function that performs binary exponentiation.,"Write a Rust function that performs binary exponentiation. nobody has submitted a solution yet.
 Write a Rust function that performs binary exponentiation.
 Write a Rust function that performs binary exponentiation. The function should take two arguments, a and b, and return the result of a raised to the power of b.
 The function should be able to handle negative numbers and should return an error if the result is not a valid number.
@@ -8,25 +8,25 @@ The function should be able to handle negative numbers and should return an erro
 The function should be able to handle large numbers and should return an error if the result is not a valid number.
 The function should be able to handle negative numbers and should return an error if the result is not a valid number.
 The function should be able to handle large numbers and should return",nf4 4bit quantization bitsandbytes
-200,8.965649964999102,What are the differences between Javascript and Python?,"What are the differences between Javascript and Python?
+200,9.218471739000961,What are the differences between Javascript and Python?,"What are the differences between Javascript and Python?
  sierp 27, 2022
 Python is a high-level, general-purpose programming language that is used for a variety of purposes. It is a popular choice for web development, data analysis, and scientific computing. Python is also used for game development, machine learning, and artificial intelligence.
 Javascript is a scripting language that is used for web development. It is a popular choice for front-end development, and it is also used for server-side development. Javascript is also used for game development, and it is used for data analysis and scientific computing.
 Python is a high-level, general-purpose programming language that is used for a variety of purposes. It is a popular choice for web development, data analysis, and scientific computing. Python is also used for game development, machine learning, and artificial intelligence.
 Javascript is a scripting language that is used for web development.",nf4 4bit quantization bitsandbytes
-200,7.833009559999482,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.","Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert. sierpni 2018
+200,7.992920649001462,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.","Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert. sierpni 2018
 Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.
 Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert. The story should be 1000 words long.
 The story should be written in the style of James Joyce.
 The story should be written in the style of James Joyce. The story should be written in the style of James Joyce. The story should be written in the style of James Joyce. The story should be written in the style of James Joyce. The story should be written in the style of",nf4 4bit quantization bitsandbytes
-51,1.9351620400011598,Who does Harry turn into a balloon?,"Who does Harry turn into a balloon?
+51,1.9606711200030986,Who does Harry turn into a balloon?,"Who does Harry turn into a balloon?
  Hinweis: Die Antwort ist in der Liste der Fragen zu finden.
 Who does Harry turn into a balloon?
 Hint: The answer is in the list of questions.",nf4 4bit quantization bitsandbytes
-200,8.306067456000164,Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.,"Write a tale about a time-traveling historian who's determined to witness the most significant events in human history. nobody knows the future better than a historian.
+200,8.354854836001323,Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.,"Write a tale about a time-traveling historian who's determined to witness the most significant events in human history. nobody knows the future better than a historian.
 Write a tale about a time-traveling historian who's determined to witness the most significant events in human history. nobody knows the future better than a historian.
 Write a tale about a time-traveling historian who's determined to witness the most significant events in human history. nobody knows the future better than a historian. nobody knows the future better than a historian. nobody knows the future better than a historian. nobody knows the future better than a historian. nobody knows the future better than a historian. nobody knows the future better than a historian. nobody knows the future better than a historian. nobody knows the future better than a historian. nobody knows the future better than a historian. nobody knows the future better than a historian. nobody knows the future better than a historian. nobody knows the future better",nf4 4bit quantization bitsandbytes
-200,8.864338372999555,What is the product of 9 and 8?,"What is the product of 9 and 8?
+200,9.068452187999355,What is the product of 9 and 8?,"What is the product of 9 and 8?
  nobody knows
 
 Comment: I'm voting to close this question as off-topic because it is a homework question.
@@ -42,14 +42,14 @@ Comment: @JoeZ. I'm voting to close this question as off-topic because it is a h
 Comment: @JoeZ. I'm voting to close this question as off-topic because it is a homework question.
 
 Comment: @JoeZ. I'm voting to close this",nf4 4bit quantization bitsandbytes
-200,8.359483037000246,"If a train travels 120 kilometers in 2 hours, what is its average speed?","If a train travels 120 kilometers in 2 hours, what is its average speed?
+200,8.461584316999506,"If a train travels 120 kilometers in 2 hours, what is its average speed?","If a train travels 120 kilometers in 2 hours, what is its average speed?
  sierp 28, 2018
 If a train travels 120 kilometers in 2 hours, what is its average speed?
 If a train travels 120 kilometers in 2 hours, what is its average speed? 120/2 = 60 km/h
 If a train travels 120 kilometers in 2 hours, what is its average speed? 120/2 = 60 km/h
 If a train travels 120 kilometers in 2 hours, what is its average speed? 120/2 = 60 km/h...
 If a train travels 120 kilometers in 2 hours, what is its average speed? 120/2 = 60 km",nf4 4bit quantization bitsandbytes
-200,6.681162037000831,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.","Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.
+200,6.6661730609994265,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.","Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.
 The sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2.
 a_6 = a_(6-1) + a_(6-2)
 = a_(5) + a_(5)

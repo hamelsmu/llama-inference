@@ -40,5 +40,5 @@ if __name__ == '__main__':
         counter += 1
 
     df = pd.DataFrame(responses)
-    df.to_csv('bench-hf.csv', index=False)
+    df.to_csv('bench-hf-bb.csv', index=False)
 
