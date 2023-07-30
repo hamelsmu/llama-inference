@@ -1,27 +1,46 @@
 # Load model directly
 from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import BitsAndBytesConfig
+import torch
 import time
+import sys
+sys.path.append('../common/')
+from questions import questions
+import pandas as pd
 
-tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf")
-model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-hf")
+model_id = "meta-llama/Llama-2-7b-hf"
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+nf4_config = BitsAndBytesConfig(
+   load_in_4bit=True,
+   bnb_4bit_quant_type="nf4",
+   bnb_4bit_compute_dtype=torch.bfloat16
+)
+model_nf4 = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=nf4_config)
 
-# model = model.to_bettertransformer()
-model.to("cuda")
 
 prompt = "Hello, my llama's name is Zach"
 
-start_time = time.perf_counter()
+def predict(prompt:str):
+    start_time = time.perf_counter()
+    inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
+    generated_ids = model_nf4.generate(**inputs, max_new_tokens=200)
+    output = tokenizer.batch_decode(generated_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+    request_time = time.perf_counter() - start_time
+    return {'tok_count': len(generated_ids),
+        'time': request_time,
+        'question': prompt,
+        'answer': output,
+        'note': 'nf4 4bit quantization bitsandbytes'}
 
-inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
-generated_ids = model.generate(**inputs)
 
-request_time = time.perf_counter() - start_time
-print(request_time)
+if __name__ == '__main__':
+    counter = 1
+    responses = []
 
-start_time = time.perf_counter()
-inputs = tokenizer("This is a diffedrent prompt", return_tensors="pt").to("cuda")
-generated_ids = model.generate(**inputs)
+    for q in questions:
+        if counter >= 2: responses.append(predict(q))
+        counter += 1
 
-request_time = time.perf_counter() - start_time
+    df = pd.DataFrame(responses)
+    df.to_csv('bench-hf.csv', index=False)
 
-print(f'Final request time: {request_time}')
