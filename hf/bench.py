@@ -23,10 +23,10 @@ prompt = "Hello, my llama's name is Zach"
 def predict(prompt:str):
     start_time = time.perf_counter()
     inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
-    generated_ids = model_nf4.generate(**inputs, max_new_tokens=200)
+    generated_ids = model_nf4.generate(**inputs, max_length=200)
     output = tokenizer.batch_decode(generated_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
     request_time = time.perf_counter() - start_time
-    return {'tok_count': len(generated_ids),
+    return {'tok_count': generated_ids.shape[1],
         'time': request_time,
         'question': prompt,
         'answer': output,
