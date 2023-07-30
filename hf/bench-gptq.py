@@ -25,8 +25,6 @@ model = AutoGPTQForCausalLM.from_quantized(model_name_or_path,
         quantize_config=None)
 
 
-prompt = "Hello, my llama's name is Zach"
-
 def predict(prompt:str):
     start_time = time.perf_counter()
     inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
