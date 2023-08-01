@@ -1,12 +1,12 @@
 question,note,tok_count,time,answer
-Write a Rust function that performs binary exponentiation.,vLLM,200,4.321538192991284,"In this context, we mean the operation +2**1024 + 1.
+Write a Rust function that performs binary exponentiation.,vLLM,200,4.313839659999758,"In this context, we mean the operation +2**1024 + 1.
 The input is a Rust integer, therefore it consists of a 64 bit Rust unsigned integer values, in the range [0, 2**64). As per the C language standard, its most significant bit is 1. The output is the same modulo 2**64.
 In addition, the value must be obtained in 50 ms or less.
 Therefore, what we really want is a function that computes the little-endian binary exponentiation, properly padded with zeroes to permit grober integrations.
 >>> a2b(65536)
 We use a table like this one to compute a*b and x0,x1 and x2 variables hold memory for x0, x1, x2:
 We initialize the overall variable p using the parameter w. The variable xbo"
-What are the differences between Javascript and Python?,vLLM,200,4.315047505995608,"
+What are the differences between Javascript and Python?,vLLM,200,4.315066276999914,"
 JavaScript and Python are two popular programming languages, and they have a few key differences. These differences can impact the way that you program, so it is important to understand the differences between these two languages. We will cover some of the main differences between JavaScript and Python.
 Python is an interpreted language, while Javascript is compiled.
 Python is a higher level language while Javascript is a lower level language.
@@ -16,9 +16,9 @@ This is an ever-evolving field, so check back soon for more insights.
 Python or JavaScript?
 Before discussing the differences between Python and JavaScript, it is helpful to understand the fundamentals of the languages. Programming languages can be considered very similar to spoken languages. From an algorithmic perspective, they use the same building blocks to create functional programming products.
 "
-"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.",vLLM,200,4.323686999006895,"Writing exercise.
+"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.",vLLM,200,4.3145644790001825,"Writing exercise.
 ""Like all the best stories, Canticle of A Soul by the Waters of the Soda Springs visits some pretty terrible places, and poignant places, and some wonderful status. All kinds of horrible things happen to the people in this book - mostly to Boyd, who is away from his family, but most of all to Izzy - yet, somehow, when we look back in the book, the terrible things happen to Boyd in a kind of light, the horrible things to Izzy in a kind of comfort, the one moment we feel the troubles on the loom. We can see how life is harder for sister than for brother, but we can also see a kind of beauty in the hardness of life, a kind of peace and a kind of Godliness. McPherson is tremendous on the natural world, so there are plenty of secrets in the Australian desert that will slacken with more of"
-Who does Harry turn into a balloon?,vLLM,105,2.270226348991855,"
+Who does Harry turn into a balloon?,vLLM,105,2.2522152970000207,"
 Which dancer rap battles bloods and crips?
 Why does dancing man go to detention?
 Why is the song 99 Luftballons terrible?
@@ -27,7 +27,7 @@ Why does harry find it funny when the kids think he goes to bernice’s for math
 The dancing wumbu-woo!
 because they steal
 He turns into a balloon becauseingo shits!</s>"
-Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.,vLLM,200,4.321074613995734,"It's just that he's invisible to all but one person.
+Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.,vLLM,200,4.308479694000198,"It's just that he's invisible to all but one person.
 An odd regularity at the end of Oakland streets
 A sub-theme: If you are a time traveler, do you have regrets, and if you compare today’s world with the environment thousands of years ago, how much more liberal your society may have been on LGBTQ than today.
 Time travel does NOT have to be an active effort.
@@ -36,19 +36,19 @@ Exciting thread. Good luck everyone!
 On ‎2‎/‎10‎/‎2019 at 8:11 PM, GwenO said:
 ...an invisible historian time travels to the past and witnesses specific events, but can't actually interact with them.
 I've seen it in movies, but haven't taken the author's"
-What is the product of 9 and 8?,vLLM,200,4.317543558005127,"Factors of 9 It’s easy to add together the number and to achieve 17 answers that comprise the multiplication of 9 and 8. The math answer is 9 times 8 is 72.
+What is the product of 9 and 8?,vLLM,200,4.304731375000301,"Factors of 9 It’s easy to add together the number and to achieve 17 answers that comprise the multiplication of 9 and 8. The math answer is 9 times 8 is 72.
 Now that you have the product, you need to spell out the 9 and 8 with digits. The numbers 1 and 8 should be written as 1 and go together in column 1 and column 7. The number 2 goes at the grid on row 2 and column 6. Put 2 at the column 5 on the diagram. These numbers are now increased by.
 4P8 22N4
 Q88N4 48N8 2N48
 5N88N4 D4 is found by multiplying 8 times 5.
 7N4P22 Using the right 3-digit factor blocks are essential for the multiplication of 7 and"
-"If a train travels 120 kilometers in 2 hours, what is its average speed?",vLLM,200,4.320016679994296,"
+"If a train travels 120 kilometers in 2 hours, what is its average speed?",vLLM,200,4.308625810000194,"
 What: Average speed of the train
 Average speed, huh? This is the simplest mathematical solution ever. But it's not the obvious answer that most think when taking this test. The obvious solution is that it's 60km/h. Well, you can practically enter it on your answer blank, because that's why the calculator is.
 But that's not the correct solution. So keep reading and learn how to apply this formula. After all, on average you save an hour and a half for putting a little brain power with a mathematical solution.
 How to calculate average speed
 When we talk about average speed, we're talking about a value (speed) that represents the total time in one direction. In other words, if a train goes 90 km in 3 hours, it is likely that in less than two hours it moves back. And if a train goes 80 km in 3 hours,"
-"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.",vLLM,119,2.5716439169918885,"
+"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.",vLLM,119,2.565240901999914,"
 Let the sequence a_ = 3.
 Next, let the sequence b_ be 3.
 Let the sequence c_ = 3.

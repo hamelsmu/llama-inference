@@ -1,6 +1,5 @@
 import sys, time
 import pandas as pd
-from tqdm import tqdm
 from vllm import SamplingParams, LLM
 
 #from https://modal.com/docs/guide/ex/vllm_inference
@@ -58,7 +57,7 @@ if __name__ == '__main__':
     counter = 1
     responses = []
 
-    for q in tqdm(questions):
+    for q in questions:
         response = generate(question=q, llm=llm, note='vLLM')
         if counter >= 2:
             responses.append(response)
