@@ -125,7 +125,6 @@ class Model:
 @stub.local_entrypoint()
 def main():
     import pandas as pd
-    from tqdm import tqdm
     model = Model()
     questions = [
         # Coding questions
@@ -143,7 +142,7 @@ def main():
     ]
     counter = 1
     responses = []
-    for q in tqdm(questions):
+    for q in questions:
         response = model.generate.call([q])
         if counter >= 2:
             responses.append(response)
