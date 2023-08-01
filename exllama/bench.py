@@ -3,7 +3,8 @@ import os, sys, time, argparse
 if not os.getenv('OPENAI_API_KEY'):
     raise ValueError("Must set environment variable OPENAI_API_KEY")
 import pandas as pd
-from tqdm import tqdm
+sys.path.append('../common/')
+from questions import questions
 
 url = 'http://0.0.0.0:5001/v1'
 openai.api_base = url
@@ -19,10 +20,10 @@ def generate_text_and_save_results(filename):
     counter = 1
     responses = []
 
-    for q in tqdm(questions):
+    for q in questions:
         start = time.perf_counter()
         result =openai.Completion.create(model='TheBloke_Llama-2-7B-GPTQ',
-                                         prompt="Say this is a test",
+                                         prompt=q,
                                          max_tokens=200,
                                          temperature=0)
         request_time = time.perf_counter() - start

@@ -1,41 +1,44 @@
 tok_count,time,question,answer,note
-201,6.534949899010826,Write a Rust function that performs binary exponentiation.,". nobody will know
-I'm not sure if I should be worried or excited about the fact that my newest blog post has been viewed 10 times in less than an hour, but it seems like people are reading and commenting on other posts so maybe they aren't all just looking at me.
-Anyway, here goes nothing:
-My name is Katie and I am a sophomore at UCSB studying English Literature with minors in Creative Writing and Film Studies. I have always loved writing (and still do) and hope to one day write for a living. I also love movies and music and art and books and food and traveling and meeting new people and learning things and being outside and laughing and smiling and dancing and singing and having fun!
-So far college life hasn’t really lived up to what I expected of it. It was supposed to be more exciting, more interesting, more challenging…",exllama/GPTQ --loader exllama_hf --model TheBloke_Llama-2-7B-GPTQ https://github.com/paul-gauthier/aider/issues/110#issuecomment-1644318545
-201,6.490642171003856,What are the differences between Javascript and Python?,". nobody will know
-I'm not sure if I should be worried or excited about the fact that my newest blog post has been viewed 10 times in less than an hour, but it seems like people are reading and commenting on other posts so maybe they aren't all just looking at me.
-Anyway, here goes nothing:
-My name is Katie and I am a sophomore at UCSB studying English Literature with minors in Creative Writing and Film Studies. I have always loved writing (and still do) and hope to one day write for a living. I also love movies and music and art and books and food and traveling and meeting new people and learning things and being outside and laughing and smiling and dancing and singing and having fun!
-So far college life hasn’t really lived up to what I expected of it. It was supposed to be more exciting, more interesting, more challenging…",exllama/GPTQ --loader exllama_hf --model TheBloke_Llama-2-7B-GPTQ https://github.com/paul-gauthier/aider/issues/110#issuecomment-1644318545
-201,6.533130577998236,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.",". nobody will know
-I'm not sure if I should be worried or excited about the fact that my newest blog post has been viewed 10 times in less than an hour, but it seems like people are reading and commenting on other posts so maybe they aren't all just looking at me.
-Anyway, here goes nothing:
-My name is Katie and I am a sophomore at UCSB studying English Literature with minors in Creative Writing and Film Studies. I have always loved writing (and still do) and hope to one day write for a living. I also love movies and music and art and books and food and traveling and meeting new people and learning things and being outside and laughing and smiling and dancing and singing and having fun!
-So far college life hasn’t really lived up to what I expected of it. It was supposed to be more exciting, more interesting, more challenging…",exllama/GPTQ --loader exllama_hf --model TheBloke_Llama-2-7B-GPTQ https://github.com/paul-gauthier/aider/issues/110#issuecomment-1644318545
-201,6.5096788050141186,Who does Harry turn into a balloon?,". nobody will know
-I'm not sure if I should be worried or excited about the fact that my newest blog post has been viewed 10 times in less than an hour, but it seems like people are reading and commenting on other posts so maybe they aren't all just looking at me.
-Anyway, here goes nothing:
-My name is Katie and I am a sophomore at UCSB studying English Literature with minors in Creative Writing and Film Studies. I have always loved writing (and still do) and hope to one day write for a living. I also love movies and music and art and books and food and traveling and meeting new people and learning things and being outside and laughing and smiling and dancing and singing and dreaming big dreams.
-This blog is going to be a place where I can share some of those interests as well as talk about what I’ve learned from them over time",exllama/GPTQ --loader exllama_hf --model TheBloke_Llama-2-7B-GPTQ https://github.com/paul-gauthier/aider/issues/110#issuecomment-1644318545
-201,6.548390564974397,Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.,". nobody will know
-I'm not sure if I should be worried or excited about the fact that my newest blog post has been viewed 10 times in less than an hour, but it seems like people are reading and commenting on other posts so maybe they aren't all just looking at me.
-Anyway, here goes nothing:
-My name is Katie and I am a sophomore at UCSB studying English Literature with minors in Creative Writing and Film Studies. I have always loved writing (and still do) and hope to one day write for a living. I also love movies and music and art and books and food and traveling and meeting new people and learning things and being outside and laughing and smiling and dancing and singing and having fun!
-So far college life hasn’t really lived up to what I expected of it. It was supposed to be more exciting, more interesting, more challenging…",exllama/GPTQ --loader exllama_hf --model TheBloke_Llama-2-7B-GPTQ https://github.com/paul-gauthier/aider/issues/110#issuecomment-1644318545
-201,6.557099268015008,What is the product of 9 and 8?,". nobody will know
-I'm not sure if I should be worried or excited about the fact that my newest blog post has been viewed 10 times in less than an hour, but it seems like people are reading and commenting on other posts so maybe they aren't all just looking at me.
-Anyway, here goes nothing:
-My name is Katie and I am a sophomore at UCSB studying English Literature with minors in Creative Writing and Film Studies. I have always loved writing (and still do) and hope to one day write for a living. I also love movies and music and art and books and food and traveling and meeting new people and learning things and being outside and laughing and smiling and dancing and singing and dreaming big dreams.
-This blog is going to be a place where I can share some of those interests as well as talk about what I’ve learned from them over time",exllama/GPTQ --loader exllama_hf --model TheBloke_Llama-2-7B-GPTQ https://github.com/paul-gauthier/aider/issues/110#issuecomment-1644318545
-201,6.535117376013659,"If a train travels 120 kilometers in 2 hours, what is its average speed?",". nobody will know
-I'm not sure if I should be worried or excited about the fact that my newest blog post has been viewed 10 times in less than an hour, but it seems like people are reading and commenting on other posts so maybe they aren't all just looking at me.
-Anyway, here goes nothing:
-My name is Katie and I am a sophomore at UCSB studying English Literature with minors in Creative Writing and Film Studies. I have always loved writing (and still do) and hope to one day write for a living. I also love movies and music and art and books and food and traveling and meeting new people and learning things and being outside and laughing and smiling and dancing and singing and having fun!
-So far college life hasn’t really lived up to what I expected of it. It was supposed to be more exciting, more interesting, more challenging…",exllama/GPTQ --loader exllama_hf --model TheBloke_Llama-2-7B-GPTQ https://github.com/paul-gauthier/aider/issues/110#issuecomment-1644318545
-201,6.558801998035051,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.",". nobody will know
-I'm not sure if I should be worried or excited about the fact that my newest blog post has been viewed 10 times in less than an hour, but it seems like people are reading and commenting on other posts so maybe they aren't all just looking at me.
-Anyway, here goes nothing:
-My name is Katie and I am a sophomore at UCSB studying English Literature with minors in Creative Writing and Film Studies. I have always loved writing (and still do) and hope to one day write for a living. I also love movies and music and art and books and food and traveling and meeting new people and learning things and being outside and laughing and smiling and dancing and singing and having fun!
-So far college life hasn’t really lived up to what I expected of it. It was supposed to be more exciting, more interesting, more challenging…",exllama/GPTQ --loader exllama_hf --model TheBloke_Llama-2-7B-GPTQ https://github.com/paul-gauthier/aider/issues/110#issuecomment-1644318545
+50,0.7547306110000136,Write a Rust function that performs binary exponentiation.,"
+Write a Rust function that performs binary exponentiation. The function should take two arguments, the first of which is an integer and the second of which is another integer or floating point number. It should return the result as a float.",textgen webui exllama
+202,2.4186312880000287,What are the differences between Javascript and Python?,"
+ everybody knows that python is a high level language, but what about javascript. Is it also considered as a high-level programming language or not ?
+javascript python
+Siddharth KumarSiddharth Kumar
+I think you should ask this question on stackoverflow – Siddharth Kumar Jul 1 '09 at 2:56
+Javascript is an interpreted language (it's run by the browser) while Python is compiled to machine code before being executed. This makes them very different languages in terms of performance.
+Python has more features than JavaScript such as classes, modules etc. It can be used for server side scripting too using frameworks like Django.
+JavaScript is easier to learn because it doesn't have many concepts which confuse beginners.
+Both languages are object oriented so they share some similarities.
+The main difference I see is that JS is client side only whereas Python can be both client and server side.",textgen webui exllama
+201,2.4651654180000833,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.","everybody is welcome!
+I'm not sure if this was meant as an exercise or just for fun but I thought it would be interesting to try and write something like that so here goes:
+The year is 2083 and I am on my way to Australia with my wife and two children. We are travelling by train from London to Sydney via Melbourne where we will spend three days before continuing our journey across the continent to Perth. The train has been specially fitted out for us and there are only four other passengers besides ourselves. It’s a long journey and we have plenty of time to talk together and get to know each other better.
+We arrive at Melbourne after five nights aboard ship and take a taxi into town. Our hotel is very luxurious and comfortable; everything you could possibly want is provided including food cooked fresh every day. There is even a robot chef who can make anything you fancy. He is called ‘B",textgen webui exllama
+111,1.4344062470000836,Who does Harry turn into a balloon?,"
+ nobody knows.
+Who is the only person to have seen him in his true form?
+Harry Potter, Ron Weasley and Hermione Granger.
+What was the name of the first book written by JK Rowling?
+The idea for what became ""Harry Potter"" came from an image she had while riding on a train between Manchester and London: A boy wizard who could speak with snakes. She wrote it down as soon as she got home that night. The rest is history!",textgen webui exllama
+201,2.4344012519999296,Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.,"nobody knows what will happen when you travel back in time, but one thing is for sure: it won’t be boring!
+The Time Traveller by @johnny_mccoy
+A man from 2018 goes back in time and meets his ancestors. He learns that he has been reincarnated many times before. The story follows him as he tries to find out why this keeps happening to him.
+Time Traveler by @david_henderson
+I was born on December 3rd, 1975 at 4:06pm EST (UTC -5). I died on April 1st, 2018 at 12:00am PDT (UTC +8) after being hit by a car while crossing the street with my dog. This is how I became immortal...
+Immortality by @david_henderson
+It",textgen webui exllama
+46,0.7054413099999692,What is the product of 9 and 8?,"
+ nobody knows.
+What do you think about this?
+I'm not sure if I understand your question correctly, but it sounds like a joke to me.
+The answer would be 72.",textgen webui exllama
+133,1.6488450859999375,"If a train travels 120 kilometers in 2 hours, what is its average speed?","
+ everybody knows that the answer to this question is 60 km/h. But how do we know it's not 30 or 48 ?
+The answer lies in the fact that we are given information about both distance and time traveled by the train. We can use these two pieces of information to calculate the average speed using the formula: Average Speed = Distance Travelled / Time Taken. In our case, the distance traveled was 120km and the time taken was 2hrs which gives us an average speed of 60km/h (rounded off).",textgen webui exllama
+128,1.6158720240000548,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.","
+The first thing to do here is to use the definition of a_n to get an expression for a_6 in terms of a_4 and a_5:
+a_6 = (a_4+a_5)+(a_4−a_5)=(a_4+a_5)+(a_4−a_5).
+Now we can substitute these expressions into our formula from above:
+a_6=((3+5)+(3−5))+(3−5)=9+0=(9).
+This means that a_6 = 9.",textgen webui exllama
