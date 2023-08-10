@@ -1,4 +1,4 @@
-from mlc_chat import ChatModule
+from mlc_chat import ChatModule, ChatConfig
 from mlc_chat.callback import StreamToStdout
 from transformers import AutoTokenizer
 import time
@@ -10,7 +10,9 @@ import pandas as pd
 
 
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf")
-cm = ChatModule(model="Llama-2-7b-chat-hf-q4f16_1")
+
+cfg = ChatConfig(max_gen_len=200)
+cm = ChatModule(model="Llama-2-7b-chat-hf-q4f16_1", chat_config=cfg)
 
 def tok_count(prompt:str):
     inputs = tokenizer(prompt)
@@ -21,7 +23,7 @@ def predict(prompt:str):
     output = cm.generate(prompt=prompt)
     request_time = time.perf_counter() - start_time
 
-    return {'tok_count': tok_count(prompt),
+    return {'tok_count': tok_count(output),
             'time': request_time,
             'question': prompt,
             'answer': output,
