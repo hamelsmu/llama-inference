@@ -5,6 +5,7 @@ import pandas as pd
 sys.path.append('../common/')
 from questions import questions
 from tqdm import tqdm
+from litellm import completion
 
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf",
                                           use_auth_token=True)
@@ -28,6 +29,19 @@ def generate(prompt):
             'time': request_time,
             'question': prompt,
             'answer': response.json()[0]['generated_text'],
+            'note': 'hf-endpoint'}
+
+def litellm_generate(prompt, model="meta-llama/llama-2-7b-hf"):
+    messages=[{"role":"user", "content": prompt}]
+    start = time.perf_counter()
+    response = completion(model=model, messages=messages) 
+    request_time = time.perf_counter() - start
+    text_response = response['choices'][0]['message']['content']
+    usage_tokens = response['usage']['completion_tokens']
+    return {'tok_count': usage_tokens,
+            'time': request_time,
+            'question': prompt,
+            'answer': text_response,
             'note': 'hf-endpoint'}
 
 if __name__ == '__main__':
