@@ -1,5 +1,5 @@
 tok_count,time,question,answer,note
-212,6.304284000012558,Write a Rust function that performs binary exponentiation.,"Write a Rust function that performs binary exponentiation.
+212,6.5467378750036005,Write a Rust function that performs binary exponentiation.,"Write a Rust function that performs binary exponentiation.
 
 ## Examples
 
@@ -18,27 +18,27 @@ exponentiate(2, 10) // 1024
 - The function should be `extern ""C"" fn(u32, u32) -> u32`
 - The function should be `extern ""C"" fn(u32, u32) -> u32`
 - The function should be `extern ""C"" fn(u32, u32) -> u32`
-- The function should be `extern ""C"" fn(u",hf-endpoint
-210,6.303683167003328,What are the differences between Javascript and Python?,"What are the differences between Javascript and Python?
-Python is a high-level programming language that is used for general-purpose programming. It is an interpreted language, which means that it is not compiled into machine code before execution. Python is a dynamic language, which means that it can be used to create programs that are not statically typed. Python is a scripting language, which means that it can be used to create programs that are not compiled into machine code before execution. Python is a high-level programming language that is used for general-purpose programming. It is an interpreted language, which means that it is not compiled into machine code before execution. Python is a dynamic language, which means that it can be used to create programs that are not statically typed. Python is a scripting language, which means that it can be used to create programs that are not compiled into machine code before execution. Python is a high-level programming language that is used for general-purpose programming. It is an interpreted language, which",hf-endpoint
-235,6.333531499985838,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.","Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.
+- The function should be `extern ""C"" fn(u",sagemaker-realtime-hf-endpoint
+210,6.60260029201163,What are the differences between Javascript and Python?,"What are the differences between Javascript and Python?
+Python is a high-level programming language that is used for general-purpose programming. It is an interpreted language, which means that it is not compiled into machine code before execution. Python is a dynamic language, which means that it can be used to create programs that are not statically typed. Python is a scripting language, which means that it can be used to create programs that are not compiled into machine code before execution. Python is a high-level programming language that is used for general-purpose programming. It is an interpreted language, which means that it is not compiled into machine code before execution. Python is a dynamic language, which means that it can be used to create programs that are not statically typed. Python is a scripting language, which means that it can be used to create programs that are not compiled into machine code before execution. Python is a high-level programming language that is used for general-purpose programming. It is an interpreted language, which",sagemaker-realtime-hf-endpoint
+235,6.59097487499821,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.","Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.
 Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert. The story should be about 1000 words long.
 The story should be about 1000 words long.
-The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1",hf-endpoint
-211,6.322703334008111,Who does Harry turn into a balloon?,"Who does Harry turn into a balloon?
+The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1000 words long. The story should be about 1",sagemaker-realtime-hf-endpoint
+211,6.599424957996234,Who does Harry turn into a balloon?,"Who does Harry turn into a balloon?
 Who does Harry turn into a balloon? Harry Potter and the Chamber of Secrets Harry Potter and the Chamber of Secrets is the second novel in the Harry Potter series and the second novel written by J. K. Rowling. The plot follows Harry Potter’s second year at Hogwarts as he is beset by a…
 What is the best way to get rid of a cold sore?
 What is the best way to get rid of a cold sore? Cold sores are caused by the herpes simplex virus (HSV). There is no cure for HSV, but there are ways to treat cold sores and prevent them from coming back. Cold sores usually go away on their own within 10 to 14 days.…
 What is the best way to get rid of a cold sore fast?
-What is the best way to get rid of a cold sore fast? Cold sores",hf-endpoint
-226,6.350354958005482,Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.,"Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.
+What is the best way to get rid of a cold sore fast? Cold sores",sagemaker-realtime-hf-endpoint
+226,6.6202506669797,Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.,"Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.
 Write a tale about a time-traveling historian who's determined to witness the most significant events in human history. The story should be told from the perspective of the historian, and should include at least one scene in which the historian witnesses a significant event in history.
 The story should be told from the perspective of the historian, and should include at least one scene in which the historian witnesses a significant event in history.
-The story should be told from the perspective of the historian, and should include at least one scene in which the historian witnesses a significant event in history. The story should be told from the perspective of the historian, and should include at least one scene in which the historian witnesses a significant event in history. The story should be told from the perspective of the historian, and should include at least one scene in which the historian witnesses a significant event in history. The story should be told from the perspective of the historian, and should include at least",hf-endpoint
-212,6.284674541995628,What is the product of 9 and 8?,"What is the product of 9 and 8?
+The story should be told from the perspective of the historian, and should include at least one scene in which the historian witnesses a significant event in history. The story should be told from the perspective of the historian, and should include at least one scene in which the historian witnesses a significant event in history. The story should be told from the perspective of the historian, and should include at least one scene in which the historian witnesses a significant event in history. The story should be told from the perspective of the historian, and should include at least",sagemaker-realtime-hf-endpoint
+212,6.562797916994896,What is the product of 9 and 8?,"What is the product of 9 and 8?
 What is the product of 9 and 8? 72
-What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is",hf-endpoint
-223,6.325880457996391,"If a train travels 120 kilometers in 2 hours, what is its average speed?","If a train travels 120 kilometers in 2 hours, what is its average speed?
+What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is the product of 9 and 8? 72 What is",sagemaker-realtime-hf-endpoint
+223,6.578224041993963,"If a train travels 120 kilometers in 2 hours, what is its average speed?","If a train travels 120 kilometers in 2 hours, what is its average speed?
 A. 60 km/h
 B. 60 km/h
 C. 60 km/h
@@ -47,8 +47,8 @@ E. 60 km/h
 The average speed of a train is the distance traveled by the train divided by the time taken to travel that distance.
 The average speed of a train is 120 km/h.
 The average speed of a train is 120 km/h. The average speed of a train is the distance traveled by the train divided by the time taken to travel that distance.
-The average speed of a train is 120 km/h. The average speed of a train is the distance traveled by the train divided by the time taken to travel that distance. The average speed of a train is 120 km/h. The average speed of a train is the distance traveled by the train divided",hf-endpoint
-260,6.3484610420127865,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.","Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.
+The average speed of a train is 120 km/h. The average speed of a train is the distance traveled by the train divided by the time taken to travel that distance. The average speed of a train is 120 km/h. The average speed of a train is the distance traveled by the train divided",sagemaker-realtime-hf-endpoint
+260,6.57934408300207,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.","Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.
 The sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2.
 a_6 = a_(6-1) + a_(6-2)
 = a_(5) + a_(4)
@@ -59,4 +59,4 @@ a_6 = a_(6-1) + a_(6-2)
 = a_(5) + a_(4)
 = 3 + 5
 = 8.
-The sequence a_n is defined by a_1 = 3, a_2 = 5, and",hf-endpoint
+The sequence a_n is defined by a_1 = 3, a_2 = 5, and",sagemaker-realtime-hf-endpoint
