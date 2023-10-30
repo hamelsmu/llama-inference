@@ -22,3 +22,8 @@ curl http://localhost:8000/generate \
     }'
 ```
 
+## Run the benchmark
+
+```bash
+python bench.py
+```
