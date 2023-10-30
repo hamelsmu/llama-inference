@@ -22,7 +22,7 @@ def chat(prompt:str):
     return {'tok_count': len(tokenizer.encode(generated_text)),
             'time': request_time,
             'question': prompt,
-            'answer': generated_text,
+            'answer': f"{generated_text}",
             'note': 'bentoml-vllm'}
 
 if __name__ == '__main__':

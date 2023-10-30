@@ -1,5 +1,5 @@
 from client import chat
-import sys
+import sys, csv
 sys.path.append('../common/')
 from questions import questions
 import pandas as pd
@@ -14,5 +14,4 @@ if __name__ == '__main__':
         counter +=1
 
     df = pd.DataFrame(responses)
-    df.to_csv('bench-bentoml.csv', index=False)
-    
+    df.to_csv('bench-bentoml.csv', index=False, quoting=csv.QUOTE_ALL)
