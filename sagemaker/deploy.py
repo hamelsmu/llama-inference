@@ -3,7 +3,6 @@
 import os
 import json
 import boto3
-import sagemaker
 from sagemaker.huggingface import get_huggingface_llm_image_uri
 from sagemaker.huggingface import HuggingFaceModel
 
