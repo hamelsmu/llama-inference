@@ -1,0 +1,61 @@
+tok_count,time,question,answer,note
+108,1.7154186661355197,Write a Rust function that performs binary exponentiation.,"Write a Rust function that performs binary exponentiation. The output of the function should depend on the two arguments: first arguement is the base (10) and the second one is the power (e). The program should use a doubly linked list. The function should raise a borrowing error if the size of the arguments is too big (they must be shorter than 'whole()', ie. < 100). You can claim partial credit for questions for which only a partial solution has been implemented.",vllm-fastapi-server
+210,3.5389398667030036,What are the differences between Javascript and Python?,"What are the differences between Javascript and Python?
+Javascript is one of the leading, most widely-used programming languages to create some great websites or develop mobile apps. Most of the websites on web are written in Java language and almost every operating system is built on with Java meaning it’s popularity and demand is extremely high. It is one of the glue that’ll bind the things supporting software and hardware. As compared to other languages, it is designed with the flexibility of switching the styles of operations to avoid bottlenecks. It helps you fasten your commands and operations. The symbolism of Java resembles a profit fake Rolex, which may serve as a bait to lure the character of its capacity on software development.
+Python is one the most widely used, open-source programming language. The magazine for Python Promotion, Data science, and Machine learning published an article saying that Python deserves a title holder as the fastest growing programming language of 2021. It is",vllm-fastapi-server
+235,3.5433350200764835,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.","Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.
+Making an enlarger is not as difficult as it sounds, and it could be done in record time with a good kit. In this video, Bob Coyne tries his hand at making an enlarger.
+While other mental health conditions affect the chemical balance within the brain, depression is a mood disorder more commonly associated with changes in neural circuitry. Link: What Happens In Your Brain When You Are Depressed
+Is there gender apartheid in America?
+Nature.com Share this entry: Nutritionists investigate the clandestine sellers of vitamins and supplements, discovering loose laws with consumers on the receiving end.
+Cassette Tape Fan Adds The Vinyl Massacre
+If you want to keep your albums in pristine condition, you should definitely study Johannes Vogel’s new album out. All of the grooves show scratches and sc",vllm-fastapi-server
+211,3.539449504110962,Who does Harry turn into a balloon?,"Who does Harry turn into a balloon?
+This is Harry Potter and his fellow Gryffindors.
+Why does Ernie Sootfreeze's mother marry Tootflute?
+Who does Tom Riddle marry into?
+Lord Voldemort, the dark wizard.
+Who does Minerva McGonagall marry?
+Horace Slughorn; Horace married the person her thought worst at the moment he met them.
+Who does Dumbledore get married to?
+Dumbledore had a marriage with Grindelwald.
+But he has never married within Hogwarts walls. We don't know who he actually marries.
+How does Scot bring get all the marriages overturned?
+They always take place in the forest.
+Can anyone successfully marry into the Witwiccan marriage tent on multiple occasions?
+In DA:O, Leliana can take a second husband after leaving her first one.
+""The Lutece",vllm-fastapi-server
+226,3.542240859940648,Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.,"Write a tale about a time-traveling historian who's determined to witness the most significant events in human history.
+Write a story set just before or after hostilities break out in Europe during World War II.
+Here's the Bram Stoker Award nominated Tor.com novella, The Future is Blue, by Cixin Liu [The Translator: Ken Liu. And that the former was written originally in Chinese. Liu might be my discovery of the year.] The above is what we would consider slender. And sometimes that's great. It's great when a book doesn't cram in every wonderfully fabulous thing every writer could throw in on every page. Sometimes really good books just give us one thing. A character. A scene. One decision.
+Make your anthology submission to us, and Virgin Helix will remind you why it first picked up the anthology.
+Short stories should be less than 3,000 words and no more than 10,000.
+Essays should",vllm-fastapi-server
+212,3.539960576687008,What is the product of 9 and 8?,"What is the product of 9 and 8?
+Nine multiplied by eight equals seventy two.
+What is the product of seven and nine?
+It is 63: Seven multiplied by nine equals 63.
+What is the product of six and nine?
+Six multiplied by nine equals 54.
+What is the product of six and nine and 8?
+6x9=54 6x8=48
+What is the product of nine and eight?
+How do you find the product of eight and nine?
+8 x 9 = 72 8 x 9 = 72
+What is the product of 8 and nine can guestanswer?
+The product of two numbers is usually written with a multiplication sign.Like: 2 x 3 = 6Like: 8 x 9 = 72Like: 8 x 4 = 32
+What is the product of nine and eighteen?
+",vllm-fastapi-server
+223,3.5448363833129406,"If a train travels 120 kilometers in 2 hours, what is its average speed?","If a train travels 120 kilometers in 2 hours, what is its average speed? Hint: You must re-check your units.
+Use the Numbers Tool to represent the train’s overall speed, label it v and convert it to miles per hour. Then click Draw by Pencil to draw a graph.
+1Avg 62.5 miles per hour
+If a train travels a distance of 120 kilometers, how many miles does it travel?
+2Using dollar signs (not the Cents one) when it comes to writing numbers looks sophisticated.
+Peter is looking for the first shark teeth he will draw on a countless number of dinosaur bones. His quickest way to sort the rocks is to classify them along their properties. As a routine, he will sieve the ones that weigh more than 2 kilograms and drop them to the ground. To avoid dropping the rough ones on the elbows of his assistants, they will classify those",vllm-fastapi-server
+260,3.5499890078790486,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.","Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.
+I'm not sure of the answer but I came in today late after missing 8 weeks of class due to illness and I got a 100. (30%-5% for the check) On my previous connections test was -50... If I have a_1 = a_2 = a_3 then I have a trap and the next term isn't calculated. Then, I begin to work from the (2_) instead of the 3 which is on the previous problem. I ask with the hope of revising my knowledge
+Jasper22, Oct 7, 2008
+You're right about the 2's.
+Note that it is safe to use the formula: if n>2, a_n = (a_n-1)+(a_n-2).
+btown20 said: ↑
+If the sequence a_n is defined by a_",vllm-fastapi-server
