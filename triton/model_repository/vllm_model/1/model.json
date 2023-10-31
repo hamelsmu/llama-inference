@@ -1,0 +1,4 @@
+{
+    "model":"NousResearch/Llama-2-7b-hf",
+    "disable_log_requests": "true"
+}
