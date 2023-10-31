@@ -17,7 +17,8 @@ config = {
   'MAX_INPUT_LENGTH': json.dumps(2048),
   'MAX_TOTAL_TOKENS': json.dumps(4096),
   'MAX_BATCH_TOTAL_TOKENS': json.dumps(8192),
-  'HUGGING_FACE_HUB_TOKEN': os.environ['HUGGING_FACE_HUB_TOKEN']
+  'HUGGING_FACE_HUB_TOKEN': os.environ['HUGGING_FACE_HUB_TOKEN'],
+  'USE_FLASH_ATTENTION': 'TRUE' # Toggle this to turn Flash Attention on/off
 }
 
 def main(health_check_timeout=600):
