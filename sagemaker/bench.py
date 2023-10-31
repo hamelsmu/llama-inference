@@ -16,4 +16,4 @@ if __name__ == '__main__':
         counter +=1
 
     df = pd.DataFrame(responses)
-    df.to_csv('bench-sagemaker.csv', index=False)
+    df.to_csv('bench-sagemaker-flashattn.csv', index=False)

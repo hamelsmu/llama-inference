@@ -29,7 +29,7 @@ def chat_iter(
         'time': request_time,
         'question': prompt,
         'answer': generated_text,
-        'note': 'sagemaker-realtime-hf-endpoint'}
+        'note': 'sagemaker-realtime-hf-endpoint-flashattention'}
 
 def main():
     # example 1
