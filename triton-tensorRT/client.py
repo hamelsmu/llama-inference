@@ -16,7 +16,7 @@ def chat(prompt:str):
         'time': request_time,
         'question': prompt,
         'answer': generated_text,
-        'note': 'triton-vllm'}
+        'note': 'triton-tensorRT-llm'}
 
 if __name__ == '__main__':
     prompt = "San Francisco is a city in"
