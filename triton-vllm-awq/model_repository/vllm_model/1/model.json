@@ -1,0 +1,5 @@
+{
+    "model":"TheBloke/Llama-2-7B-AWQ",
+    "disable_log_requests": "true",
+    "quantization": "awq"
+}
