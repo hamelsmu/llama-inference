@@ -10,7 +10,7 @@
 Look at the code in [`deploy.py`](./deploy.py), and modify any values that need to be changed, particularly `MODEL`, `MODEL_TO_EC2_TYPE`, `MODEL_TO_N_GPU` and `SM_EXEC_ROLE`.  Your AWS administrator can provide you with the value for `SM_EXEC_ROLE` which is the [SageMaker Execution Role](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html). For guidance on the type of hardware you need for various types of models, see the [Hardware requirements section of this blog post](https://www.philschmid.de/sagemaker-llama-llm).
 
 
-One easy optimization is to enable flash attention which will provide an enormous speedup.  You can do this by setting the environment variable `USE_FLASH_ATTENTION=TRUE`, which you can see in the `config` variable in [`deploy.py`](./deploy.py). This allows the underlying [Text-Generation-Inference server](https://github.com/huggingface/text-generation-inference/blob/main/server/text_generation_server/utils/flash_attn.py) to use flash attention.
+One "must do" optimization is to enable flash attention which will provide an enormous speedup.  You can do this by setting the environment variable `USE_FLASH_ATTENTION=TRUE`, which you can see in the `config` variable in [`deploy.py`](./deploy.py). This allows the underlying [Text-Generation-Inference server](https://github.com/huggingface/text-generation-inference/blob/main/server/text_generation_server/utils/flash_attn.py) to use flash attention.
 
 Finally, deploy the endpoint:
 
