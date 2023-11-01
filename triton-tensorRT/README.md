@@ -2,7 +2,137 @@
 
 Use the [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM/tree/main) backend with the [Nvidia Triton Inference Server](https://github.com/triton-inference-server/server).
 
-#### Install TensorRT
+The clearest end-to-end instructions I found was [this official blog post](https://developer.nvidia.com/blog/optimizing-inference-on-llms-with-tensorrt-llm-now-publicly-available/).
 
-Follow [these instructions](https://github.com/NVIDIA/TensorRT-LLM/blob/release/0.5.0/docs/source/installation.md).
+## Build TensorRT-LLM container
 
+Follow [these instructions](https://github.com/NVIDIA/TensorRT-LLM/blob/release/0.5.0/docs/source/installation.md) to build the docker container to compile the model.  
+
+When you are done this will have created a docker image called `tensorrt_llm/release:latest ` locally.
+
+> Note: I had to fight nvidia-docker for this to work, I ended up having to uninstall Docker and anything related to nvidia container toolkit and re-install everything from scratch.
+
+## Pull the model from HuggingFace
+
+Make a directory called model_input and clone the Hugging Face model into it.
+
+```bash
+mkdir model_input
+# Make sure you have git-lfs installed (https://git-lfs.com)
+cd model_input
+git lfs install
+git clone https://huggingface.co/meta-llama/Llama-2-7b-hf
+```
+
+## Compile the model
+
+To compile the model, mount the model you just pulled from HuggingFace and the model_output directory into the container and run the compile script.  First, shell into the container like this:
+
+```bash
+# Make an output directory to store the compiled model assets
+mkdir model_output
+
+sudo docker run --gpus all -it -v ${PWD}/model_input:/model_input -v  ${PWD}/model_output:/model_output tensorrt_llm/release:latest bash
+```
+
+Then, run the compile script.  Make sure your GPU memory is free when you do this:
+
+```bash
+# Build the LLaMA 7B model using a single GPU and FP16.
+python build.py --model_dir /model_input/Llama-2-7b-hf/ \
+                --dtype float16 \
+                --remove_input_padding \
+                --use_gpt_attention_plugin float16 \
+                --enable_context_fmha \
+                --use_gemm_plugin float16 \
+                --output_dir /model_output/
+```
+
+You can see different examples of build scripts on [this README](https://github.com/NVIDIA/TensorRT-LLM/tree/release/0.5.0/examples/llama).  Another good example to try if you want to achieve an even larger speedup is to apply int8 quantization:
+
+<details>
+  <summary>See another example</summary>
+
+I didn't use the below script, but it's another example of how to compile the model:
+
+```bash
+# Build the LLaMA 7B model using a single GPU and apply INT8 weight-only quantization.
+python build.py --model_dir /model_input/Llama-2-7b-hf/ \
+                --dtype float16 \
+                --remove_input_padding \
+                --use_gpt_attention_plugin float16 \
+                --enable_context_fmha \
+                --use_gemm_plugin float16 \
+                --use_weight_only \
+                --output_dir /model_output/
+```
+</details>
+<br>
+
+
+When you are done, exit the docker container.  The compiled assets will be located in `model_output/`.  You will see three files:
+
+- `llama_float16_tp1_rank0.engine`: The main output of the build script, containing the executable graph of operations with the model weights embedded.
+- `config.json`: Includes detailed information about the model, like its general structure and precision, as well as information about which plug-ins were incorporated into the engine.
+- `model.cache`: Caches some of the timing and optimization information from model compilation, making successive builds quicker.
+
+
+
+## Prepare the model repository
+
+The triton inference server works with model repositories that are specific directory structures with config files and other assets.  You can read about model repositories [here](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/model_repository.html).  The model repository for this example is quite complicated and involved setting up an ensemble of a preprocessing, model and postprocessing components along with lots of boilerplate code.  
+
+The easiest way to get started is to clone the example repo and modify it to suit your needs.  First clone the the repo:
+
+```bash
+git clone -b release/0.5.0 https://github.com/triton-inference-server/tensorrtllm_backend.git
+```
+
+Copy the compiled model assets from `./model_output` into the model example repository:
+
+```bash
+cp model_output/* tensorrtllm_backend/all_models/inflight_batcher_llm/tensorrt_llm/1/
+```
+
+Then use their tools to modify the configuration files of all three components of the ensemble:
+
+```bash
+# modify config for the model
+python3 tools/fill_template.py --in_place \
+      all_models/inflight_batcher_llm/tensorrt_llm/config.pbtxt \
+      decoupled_mode:true,engine_dir:/all_models/inflight_batcher_llm/tensorrt_llm/1,\
+max_tokens_in_paged_kv_cache:,batch_scheduler_policy:guaranteed_completion,kv_cache_free_gpu_mem_fraction:0.2,\
+max_num_sequences:4
+```
+
+Next, modify config for the preprocessing component, modify the `tokenizer_dir` to point to a model on HuggingFace Hub you used, which in this case is `meta-llama/Llama-2-7b-hf`:
+
+```bash
+# modify config for the preprocessing component
+python tools/fill_template.py --in_place \
+    all_models/inflight_batcher_llm/preprocessing/config.pbtxt \
+    tokenizer_type:llama,tokenizer_dir:meta-llama/Llama-2-7b-hf
+
+# modify config for the postprocessing component
+python tools/fill_template.py --in_place \
+    all_models/inflight_batcher_llm/postprocessing/config.pbtxt \
+    tokenizer_type:llama,tokenizer_dir:meta-llama/Llama-2-7b-chat-hf
+```
+
+
+## Prepare The Triton Server
+
+Next, we have to mount the model repository we just created into the Triton server and do some additional work interactively before it is ready.  Make sure you are in the `tensorrtllm_backend` directory when running the following commands:
+
+```bash
+sudo docker run -it --rm --gpus all --network host --shm-size=1g \
+-v $(pwd)/all_models:/all_models \
+-v $(pwd)/scripts:/opt/scripts \
+nvcr.io/nvidia/tritonserver:23.10-trtllm-python-py3 bash
+```
+
+
+
+
+
+https://github.com/triton-inference-server/tensorrtllm_backend
