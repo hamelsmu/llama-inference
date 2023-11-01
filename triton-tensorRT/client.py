@@ -8,7 +8,7 @@ def chat(prompt:str):
     payload = {"text_input": prompt, "parameters": {"bad_words":[""],"stop_words":[""], "max_tokens": 200}}
     headers = {'Content-Type': 'application/json'}
     start = time.perf_counter()
-    response = requests.post("localhost:8000/v2/models/ensemble/generate", headers=headers, data=json.dumps(payload))
+    response = requests.post("http://localhost:8000/v2/models/ensemble/generate", headers=headers, data=json.dumps(payload))
     generated_text = response.json()["text_output"]
     request_time = time.perf_counter() - start
 
