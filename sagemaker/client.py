@@ -9,7 +9,7 @@ tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf",
 
 def chat_iter(
     prompt:str,
-    endpoint_name: str = "huggingface-pytorch-tgi-inference-2023-10-29-05-31-01-597",
+    endpoint_name: str = "huggingface-pytorch-tgi-inference-2023-11-01-03-21-56-541",
     max_new_tokens = 200,
 ):
     llm = HuggingFacePredictor(endpoint_name=endpoint_name)
