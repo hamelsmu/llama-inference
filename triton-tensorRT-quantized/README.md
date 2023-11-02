@@ -15,6 +15,8 @@ python build.py --model_dir /model_input/Llama-2-7b-hf/ \
                 --output_dir /model_output/
 ```
 
+After you re-build make sure you copy the new model to the model repository:
 
-
-
+```bash
+cp model_output/* tensorrtllm_backend/all_models/inflight_batcher_llm/tensorrt_llm/1/
+```
