@@ -1,4 +1,4 @@
-# Nvidia Triton w/ TensorRT-LLM Backend
+# Nvidia Triton w/ TensorRT-LLM Backend + AWQ Quantization
 
 Use the [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM/tree/main) backend with the [Nvidia Triton Inference Server](https://github.com/triton-inference-server/server).
 
