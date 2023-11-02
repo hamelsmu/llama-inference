@@ -35,22 +35,54 @@ mkdir model_output
 sudo docker run --gpus all -it -v ${PWD}/model_input:/model_input -v  ${PWD}/model_output:/model_output tensorrt_llm/release:latest bash
 ```
 
+Install the quantization toolkit per [these instructions](https://github.com/NVIDIA/TensorRT-LLM/tree/release/0.5.0/examples/quantization#tensorrt-llm-quantization-toolkit-installation-guide):
+
+```bash
+cd /app/tensorrt_llm/examples/quantization
+python -m pip install --upgrade pip
+# Obtain the cuda version from the system. Assuming nvcc is available in path.
+cuda_version=$(nvcc --version | grep 'release' | awk '{print $6}' | awk -F'[V.]' '{print $2$3}')
+# Obtain the python version from the system.
+python_version=$(python3 --version 2>&1 | awk '{print $2}' | awk -F. '{print $1$2}')
+# Download and install the AMMO package from the DevZone.
+wget https://developer.nvidia.com/downloads/assets/cuda/files/nvidia-ammo/nvidia_ammo-0.3.0.tar.gz
+tar -xzf nvidia_ammo-0.3.0.tar.gz
+pip install nvidia_ammo-0.3.0/nvidia_ammo-0.3.0+cu$cuda_version-cp$python_version-cp$python_version-linux_x86_64.whl
+# Install the additional requirements
+pip install -r requirements.txt
+```
+
+Then quantize the model, this took < 10 minutes on my RTX 6000 Ada (so be patient):
+
+```bash
+# Quantize HF LLaMA 7B checkpoint into INT4 AWQ format
+cd /app/tensorrt_llm/examples/llama
+python quantize.py --model_dir /model_input/Llama-2-7b-hf/ \
+                --dtype float16 \
+                --qformat int4_awq \
+                --export_path ./llama-7b-4bit-gs128-awq.pt \
+                --calib_size 32
+```
+
 Then, run the compile script.  Make sure your GPU memory is free when you do this:
 
 ```bash
+cd /app/tensorrt_llm/examples/llama
 # Compile the LLaMA 7B model to TensorRT format
-cd examples/llama
 python build.py --model_dir /model_input/Llama-2-7b-hf/ \
+                --quant_ckpt_path ./llama-7b-4bit-gs128-awq.pt \
                 --dtype float16 \
                 --use_gpt_attention_plugin float16 \
                 --use_gemm_plugin float16 \
                 --remove_input_padding \
                 --use_inflight_batching \
                 --paged_kv_cache \
+                --use_weight_only \
+                --weight_only_precision int4_awq \
+                --per_group \
                 --output_dir /model_output/
 ```
 
-You can see different examples of build scripts on [this README](https://github.com/NVIDIA/TensorRT-LLM/tree/release/0.5.0/examples/llama).
 
 When you are done, exit the docker container.  The compiled assets will be located in `model_output/`.  You will see three files:
 
