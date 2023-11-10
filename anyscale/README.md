@@ -18,3 +18,9 @@ curl "$OPENAI_API_BASE/chat/completions" \
     "temperature": 0.7
   }'
 ```
+
+You can run the benchmark like so:
+
+```bash
+python bency.py
+```
