@@ -1,3 +1,5 @@
+First, sign up for an [Anyscale Endpoints account](https://app.endpoints.anyscale.com/)
+
 To run this benchmark, you need to set the following environment variables:
 
 ```bash
