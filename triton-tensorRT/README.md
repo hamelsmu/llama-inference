@@ -115,6 +115,10 @@ nvcr.io/nvidia/tritonserver:23.10-trtllm-python-py3 bash
 
 Next, in the Docker container, login to the HuggingFace Hub:
 
+```bash
+huggingface-cli login --token <YOUR_TOKEN>
+```
+
 Then, install the python dependencies:
 
 ```bash
