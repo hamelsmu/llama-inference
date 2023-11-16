@@ -163,7 +163,7 @@ Finally, start the Triton server:
 
 ```bash
 # Launch Server
-python /opt/scripts/launch_triton_server.py --model_repo /all_models/inflight_batcher_llm --world_size 1
+python /opt/scripts/launch_triton_server.py --world_size 1 --model_repo /all_models/inflight_batcher_llm 
 ```
 
 > Note: if you get an error `Unexpected tokenizer type: ${tokenizer_type}` this means you didn't run the `fill_template.py` script on the preprocessing and postprocessing config files correctly.
