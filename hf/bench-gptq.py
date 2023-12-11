@@ -10,14 +10,14 @@ from transformers import AutoTokenizer
 from auto_gptq import AutoGPTQForCausalLM
 
 model_name_or_path = "TheBloke/Llama-2-7B-GPTQ"
-model_basename = "gptq_model-4bit-128g"
+model_basename = "gptq-4bit-128g-actorder_True"
 
 use_triton = False
 
 tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, use_fast=True)
 
 model = AutoGPTQForCausalLM.from_quantized(model_name_or_path,
-        model_basename=model_basename,
+        revision=model_basename,
         use_safetensors=True,
         trust_remote_code=True,
         device="cuda:0",
