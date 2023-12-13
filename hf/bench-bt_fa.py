@@ -37,5 +37,5 @@ if __name__ == '__main__':
         counter += 1
 
     df = pd.DataFrame(responses)
-    df.to_csv('bench.csv', index=False)
+    df.to_csv('bench-bt_fa.csv', index=False)
 
