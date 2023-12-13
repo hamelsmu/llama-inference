@@ -1,6 +1,7 @@
 # Load model directly
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from optimum.bettertransformer import BetterTransformer
+import torch
 import time
 import sys
 sys.path.append('../common/')
