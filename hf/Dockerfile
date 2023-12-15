@@ -12,7 +12,12 @@
 # docker run --rm -it -v$HOME/.cache/huggingface/:/home/user/.cache/huggingface/ \
 #   -v$(pwd):/home/user/llama-inference --gpus all local/hf-bench \
 #   sh -c 'cd /home/user/llama-inference/hf && python3 bench.py'
-# you can substitute bench.py by bench-bb.py, bench-gptq.py or any other.
+#
+# You can substitute bench.py by bench-bb.py, bench-gptq.py or any other.
+# If using Podman with CDI substitute
+#   --gpus all
+# for
+#   --device nvidia.com/gpu=all --security-opt=label=disable
 
 # Select an available version from
 # https://gitlab.com/nvidia/container-images/cuda/blob/master/doc/supported-tags.md:
