@@ -1,5 +1,6 @@
 # Load model directly
 from transformers import AutoTokenizer, AutoModelForCausalLM
+import torch
 import time
 import sys
 sys.path.append('../common/')
@@ -8,7 +9,7 @@ import pandas as pd
 
 model_id = "meta-llama/Llama-2-7b-hf"
 tokenizer = AutoTokenizer.from_pretrained(model_id)
-model = AutoModelForCausalLM.from_pretrained(model_id)
+model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.bfloat16)
 model.to("cuda")
 
 def predict(prompt:str):
