@@ -43,7 +43,7 @@ FROM nvidia/cuda:12.3.1-devel-rockylinux9
 ARG USERID=1000
 RUN yum install -y python3-pip cmake libcudnn8 git && yum clean all && rm -rf /var/cache/yum/*
 RUN git clone https://github.com/SJTU-IPADS/PowerInfer
-WORKDIR PowerInfer
+WORKDIR /PowerInfer
 RUN pip install --no-cache-dir -r requirements.txt
 RUN cmake -S . -B build -DLLAMA_CUBLAS=ON
 RUN cmake --build build --config Release -j $(nproc)
