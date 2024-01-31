@@ -1,8 +1,8 @@
-#PowerInfer benchmark
+# PowerInfer benchmark
 
 Benchmark for [PowerInfer](https://github.com/SJTU-IPADS/PowerInfer).
 
-Note that the model loses some inference quality in exchange for speed as shown in https://huggingface.co/SparseLLM/ReluLLaMA-7B.
+Note that the model loses some inference quality in exchange for speed as shown in <https://huggingface.co/SparseLLM/ReluLLaMA-7B>.
 
 You can compile PowerInfer following their instructions and then run the server:
 
