@@ -46,7 +46,7 @@ RUN git clone https://github.com/SJTU-IPADS/PowerInfer
 WORKDIR /PowerInfer
 RUN pip install --no-cache-dir -r requirements.txt
 RUN cmake -S . -B build -DLLAMA_CUBLAS=ON
-RUN cmake --build build --config Release -j $(nproc)
+RUN cmake --build build --config Release -j "$(nproc)"
 RUN pip install --no-cache-dir pandas #for the benchmark.
 RUN adduser -u $USERID user
 USER user
