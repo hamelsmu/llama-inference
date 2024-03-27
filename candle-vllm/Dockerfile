@@ -37,9 +37,12 @@ FROM nvcr.io/nvidia/cuda:12.3.2-cudnn9-devel-ubuntu22.04 as build
 
 ARG CUDA_COMPUTE_CAP
 #RUN dnf install -y cargo openssl-devel && dnf clean all && rm -rf /var/cache/dnf/*
-RUN apt-get update && apt-get install -y curl libssl-dev pkg-config && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install --no-install-recommends -y git curl libssl-dev pkg-config && \
+    rm -rf /var/lib/apt/lists/*
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y && ln -s /root/.cargo/bin/* /usr/local/bin
-ADD https://github.com/EricLBuehler/candle-vllm.git#master /candle-vllm
+# Not supported by Podman / Buildah https://github.com/containers/buildah/issues/4974:
+#ADD https://github.com/EricLBuehler/candle-vllm.git#master /candle-vllm
+RUN git clone https://github.com/EricLBuehler/candle-vllm.git
 WORKDIR /candle-vllm
 RUN cargo install --path . --features cuda,cudnn,flash-attn,nccl
 
